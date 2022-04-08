@@ -1,45 +1,23 @@
 <h1>
-   Custom youTube thumbnail video with YouTube logo component &middot;
- 
-  <a href="https://travis-ci.org/lucasbento/react-native-thumbnail-video">
-    <img src="https://travis-ci.org/lucasbento/react-native-thumbnail-video.svg?branch=master" />
-  </a>
-</h1>
+   Custom YouTube thumbnail video with YouTube logo component
+ </h1>
 <p>
-  Easily show thumbnails for videos using React Native.
+  Used internally to handle outbound youtube links!
 </p>
 
-## Demo
 
-<p align="center">
-  <img src="https://cdn.rawgit.com/lucasbento/react-native-thumbnail-video/master/media/demo.gif" width="250" />
-</p>
 
-> See the demo on Expo: [@lucasbento/react-native-thumbnail-video-example](https://expo.io/@lucasbento/react-native-thumbnail-video-example)
 
 ## Installation
 
 ```sh
-yarn add react-native-thumbnail-video
+yarn add https://github.com/spykesocial/react-native-thumbnail-video
 ```
 
-## Usage
 
-```jsx
-import { Thumbnail } from 'react-native-thumbnail-video';
-
-// ...
-  render() {
-    return (
-      <Thumbnail url="https://www.youtube.com/watch?v=lgj3D5-jJ74" />
-    )
-  }
-// ...
-```
 
 ## Props
 
-##### [Extends `Image` prop-types](https://facebook.github.io/react-native/docs/image.html#props)
 
 ##### `url` (string)
 URL of the video
@@ -70,7 +48,3 @@ Function to be called when there's an error on the default `onPress` function.
 
 ##### `children` (component)
 Custom component to render inside of the thumbnail.
-
-## License
-
-MIT © [Lucas Bento](http://github.com/lucasbento)
