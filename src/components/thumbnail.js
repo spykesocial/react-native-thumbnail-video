@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+
 import {
+  View,
   TouchableOpacity,
   ImageBackground,
   Image,
@@ -12,6 +14,7 @@ import {
 
 import { DEFAULT_WIDTH, TYPES } from './constants';
 import { getVideoId } from '../helpers';
+import colors from '../../../../app/config/colors';
 
 export default class Thumbnail extends PureComponent {
   constructor(props) {
@@ -132,11 +135,12 @@ export default class Thumbnail extends PureComponent {
         >
         {
           showPlayIcon ? (
-            <Image
-              source={require('../assets/play.png')}
-              style={[styles.playIcon, iconStyle]}
-              testId='thumbnail-image'
-            />
+              <Image
+                source={require('../assets/play.png')}
+                style={[styles.playIcon, iconStyle]}
+                testId='thumbnail-image'
+                resizeMode='contain'
+              />
           ) : (
             null
           )
@@ -155,7 +159,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
+  iconContainer:{
+    backgroundColor:"#000000",
+
+  },
   playIcon: {
-    tintColor: 'white',
+    
   },
 });
