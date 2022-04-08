@@ -1,5 +1,5 @@
 <h1>
-  react-native-thumbnail-video &middot;
+   Custom youTube thumbnail video with YouTube logo component &middot;
  
   <a href="https://travis-ci.org/lucasbento/react-native-thumbnail-video">
     <img src="https://travis-ci.org/lucasbento/react-native-thumbnail-video.svg?branch=master" />
